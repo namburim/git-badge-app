@@ -1,0 +1,16 @@
+<div> Git Hub User Badges</div>
+
+
+<div class="git-user-badge">
+  <div> <span class="badgeLbl">User Name: </span>{{gitUser.login}}</div>
+  <div> <span class="badgeLbl">User Bio: </span>{{gitUser.bio}}</div>
+   <img style="border: 1px solid gray;" width = "80px" src={{gitUser.avatarUrl}} alt="no-Img"/>
+</div>
+<!-- [ngModel]  is one way binding set value from compoent to INputType-->
+<!-- [(ngModel)]  is TWO way binding set value from compoent to INputType-->
+
+<div>
+<span class="button"  style="margin-right: 20px;" (click)="onPrevious()" >  < </span >
+<span class="button"  (click)="onNext()" > > </span>
+</div>
+
